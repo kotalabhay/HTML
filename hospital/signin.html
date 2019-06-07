@@ -1,0 +1,67 @@
+<html>
+   
+   <head>
+      <title>Login Page</title>
+      
+      <meta charset="UTF-8">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <div class="top">
+		<div>
+		 Contact Us +91 96366 20000 / 01 | wockhardthospital@.com 
+		</div>
+	</div>
+	
+	<div class="logo">
+		<div>
+			<table>
+				<tr>
+					<td width="600px" style="font-size:50px;font-family:forte;"> <font color="#428bca"> Wockhardt  </font><font color="#000"> Hospital</font> </td>
+					<td> <br> <br>
+						<font size="4px"> 
+							<a href="index.html">HOME</a> 
+							<a href="about.html">ABOUT US</a>  
+							<a href="service.html">SERVICE</a>
+							<a href="doctor.html">DOCTORS</a> 
+							<a href="contact.html">CONTACT US</a>
+						</font>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+         
+      </style>
+      
+   </head>
+     <br>
+	 <br>
+	 <br>
+	  <form action = "index.php" method = "post">
+   <body bgcolor = "#FFFFFF">
+	
+      <div align = "center">
+         <div style = "width:300px; border: solid 1px #333333; " align = "left">
+            <div style = "background-color:#333333; color:#FFFFFF; padding:3px;"><b>Login</b></div>
+				
+            <div style = "margin:30px">
+               
+              
+                    <label>UserName :</label>
+					<input id="name" name="username" placeholder="username" type="text">
+					<label>Password :</label>
+					<input id="password" name="password" placeholder="**********" type="password"><br><br>
+					<input name="submit" type="submit" value=" Login ">
+					<span><?php echo $error; ?></span>
+               </form>
+               
+               <div style = "font-size:11px; color:#cc0000; margin-top:10px"><?php echo $error; ?></div>
+					
+            </div>
+				
+         </div>
+			
+      </div>
+		</form>
+   </body>
+</html>

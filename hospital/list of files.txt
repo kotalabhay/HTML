@@ -1,0 +1,39 @@
+about.html
+contact.html
+doctor.html
+final.php
+index.html
+index.php
+login.html
+login.php
+logout.php
+profile.php
+service.html
+session.php
+signin.html
+signin.php
+
+
+database name = abhay
+table name patients
+
+	
+PID
+FirstName
+LastName
+email_id
+mobileno
+sex
+address
+appointment__date
+
+
+CREATE DATABASE company;
+ CREATE TABLE login(
+id int(10) NOT NULL AUTO_INCREMENT,
+username varchar(255) NOT NULL,
+password varchar(255) NOT NULL,
+PRIMARY KEY (id)
+)
+
+ALTER TABLE patients add PID int not null auto_increment primary key first;
